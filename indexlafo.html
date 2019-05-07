@@ -10,46 +10,16 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="indexcss.css">
   <link rel="stylesheet" href="css/imagehover.min.css">
-  <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <link rel="stylesheet/less" type="text/css" href="style.less" />
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
+
   </style>
 </head>
 <body>
 
 
 
-<nav class="navbar navbar-default navbar-fixed-top example-8">
+<!--<nav class="navbar navbar-default navbar-fixed-top example-8">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar8">
@@ -78,12 +48,56 @@
           </li>
         </ul>
       </div>
-      <!--/.nav-collapse -->
+      
     </div>
-    <!--/.container-fluid -->
-  </nav>
+    
+  </nav>-->
 
 
+
+      <div class="navbar">
+  <div class="top-logo"></div>
+  <div class="top-menu">
+    <ul class="nav_menu">
+      <li>
+        <a href="#">Our Clinic</a>
+      </li>
+      <li>
+        <a class="ddbut1" href="#">Treatments</a>
+        <ul class="treatments">
+          <li><a href="">All</a></li>
+          <li><a href="">Braces</a></li>
+          <li><a href="">Teeth Whitening</a></li>
+          <li><a href="">Dentures</a></li>
+          <li><a href="">Checkups</a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="ddbut2" href="#">Information</a>
+        <ul class="info">
+          <li><a href="">Orthodontics</a></li>
+          <li><a href="">Pediatrics</a></li>
+          <li><a href="">Articles</a></li>
+          <li><a href="">Medical Tourism</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Plans</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Appointments</a>
+      </li>
+    </ul>
+    <div class="mobile_button"></div>
+  </div>
+  <!---top-menu--->
+</div>
+<!---navbar--->
+
+
+  <br>
+  <br>
+  <br>
+  <br>
   <br>
   <br>
 <div class="container-fluid text-center">    
@@ -94,7 +108,7 @@
       <p><a href="#">Link</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Welcome</h1>
+      <h1s>Welcome</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <hr>
       <h3>Test</h3>
@@ -167,6 +181,59 @@
 <footer class="container-fluid text-center">
   <p>Footer Text</p>
 </footer>
+<script type="text/javascript">
+$(document).ready(function() {
+  if ($(window).width() > 950) {
+    $(".nav_menu").show();
+  } else {
+    $(".nav_menu").hide();
+  }
+  if ($(window).width() > 950) {
+    $(".mobile_button").hide();
+  } else {
+    $(".mobile_button").show();
+  }
+  $(".treatments, .info").hide();
+});
 
+$(window).resize(function() {
+  if ($(window).width() > 950) {
+    $(".nav_menu").show();
+  } else {
+    $(".nav_menu").hide();
+  }
+  if ($(window).width() > 950) {
+    $(".mobile_button").hide(), $(".mobile_button").removeClass("border");
+  } else {
+    $(".mobile_button").show();
+  }
+});
+
+$(document).click(function() {
+  if ($('.treatments, .info').is(':visible')) {
+    $(".treatments, .info").fadeOut("fast")
+  }
+  if ($(window).width() < 950) {
+    $(".nav_menu").fadeOut("fast")
+    $(".mobile_button").removeClass("border");
+  }
+});
+
+$(".ddbut1").click(function(event) {
+  $(".treatments").slideToggle("fast");
+  $(".info").slideUp("fast");
+  event.stopPropagation();
+});
+$(".ddbut2").click(function(event) {
+  $(".info").slideToggle("fast");
+  $(".treatments").slideUp("fast");
+  event.stopPropagation();
+});
+$(".mobile_button").click(function(event) {
+  $(this).toggleClass("border");
+  $(".nav_menu").slideToggle("fast");
+  event.stopPropagation();
+});
+</script>
 </body>
 </html>

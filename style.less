@@ -1,10 +1,236 @@
-@color: #CE3838;
+@header-color: #262626;
+@primary-color: #519ae3;
+@header-font-color: #ffffff;
+@header-font: 'Roboto', sans-serif;
+@breakpoint: 800px;
 
-h1{
-	color: @color;
-
+// Resets
+// Main html
+html {
+  position: relative;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
 }
-h3{
-	color: @color;
-	
+a {
+  &:hover,
+  &:focus,
+  &:visited,
+  &:active {
+    text-decoration: none;
+  }
+}
+// Body Margin
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.content p, h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Outer navigation wrapper
+.navigation {
+  width: 100%;
+  height: 70px;
+  background: @header-color;
+  font-family: @header-font;
+  color: #c9c9c9;
+  & a {
+    // link colors and text decoration for nav
+    color: #c9c9c9;
+    text-decoration: none;
+    &:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+}
+// Logo and branding
+.brand {
+  position: absolute;
+  float: left;
+  padding-left: 20px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+.brand a {
+  color: #ffffff;
+  font-size: 1.4em;
+  text-decoration: none;
+  font-weight: 700;
+  &:visited,
+  &:active {
+    color: #ffffff;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+// Container with no padding for navbar
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 0px;
+}
+// Dropdown list binds to JS toggle event
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+// Navigation 
+nav {
+  float: right;
+  position: relative;
+  display: inline-block;
+  font-size: .9em;
+  text-transform: uppercase;
+  font-weight: 700;
+  & ul {
+    list-style: none;
+    text-align: left;  
+    margin: 0;
+    padding: 0;
+    & li {
+      float: left;
+      display: inline;
+      position: relative;
+      & a {
+        display: block;
+        color: #a9a9a9;
+        padding: 0 20px;
+        line-height: 70px;
+        background: @header-color;
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration: none;
+          color: @header-font-color;
+        }
+      }
+      & > a:hover {
+        background: @primary-color;
+        color: #ffffff;
+      } // Show dropdown arrow on list items with children only
+      & > a:not(:only-child):after {
+        padding-left: 4px;
+        content: ' ▾';
+      } // Dropdown list
+      ul li {
+        width: 190px;
+        & a {
+          background: #262626;
+          display: block;
+          padding: 15px;
+          line-height: 20px;
+          z-index: 1; // Ensure dropdown displays on top of content
+          &:hover {
+            background: @primary-color;
+            color: @header-font-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Mobile navigation */
+
+// Binds to JS Toggle
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: @header-color;
+  height: 70px;
+  width: 70px;
+}
+@media only screen and (max-width: @breakpoint) {
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+  }
+  .logo {
+    position: absolute;
+  }
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+    & ul {
+      display: none;
+      & li {
+        width: 100%;
+        float: none;
+        & > a {
+          padding: 15px;
+          line-height: 20px;
+        }
+        &:hover .nav-dropdown {
+          display: none;
+        }
+        ul li a {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .nav-dropdown {
+    position: static;
+    width: 100%;
+  }
+}
+@media screen and (min-width: @breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  & span,
+  & span:before,
+  & span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: @header-font-color;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+  & span:before {
+    top: -10px;
+  }
+  & span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
 }
