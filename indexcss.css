@@ -92,8 +92,9 @@ footer {
 
   vertical-align: center;
 
-height: 13px;
+height: 8px;
 background-color: black;
 border-radius: 10px;
 border-color: black;
+width: 20%;
 }
