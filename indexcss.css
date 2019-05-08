@@ -93,5 +93,7 @@ footer {
   vertical-align: center;
 
 height: 17px;
-background-color: #5D8762;
+background-color: black;
+border-radius: 10px;
+border-color: black;
 }
