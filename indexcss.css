@@ -83,8 +83,15 @@
 
 /*footer*/
 footer {
-  background: lightblue;
+ 
   text-align: center;
   padding: 90px 0px 60px 10px;
   width: 100%;
+}
+#linea2{
+
+  vertical-align: center;
+
+height: 17px;
+background-color: #5D8762;
 }
