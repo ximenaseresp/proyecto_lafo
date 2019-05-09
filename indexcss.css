@@ -106,3 +106,33 @@ border-radius: 10px;
 border-color: black;
 width: 20%;
 }
+/*footer*/
+
+
+/*animacion*/
+/*.contenedor {
+  position: relative;
+  height: 290px;
+  width: 290px;
+  margin: 50px 20px;
+  float: left;
+}*/
+
+.contenedor img {
+  position: absolute;
+  left: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.contenedor img.top:hover {
+  opacity: 0;
+}
+.contenedor2 img {
+  position: absolute;
+  left: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.contenedor2 img.top2:hover {
+  opacity: 0;
+}
