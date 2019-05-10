@@ -172,5 +172,20 @@ font-size: 40px;
 .wrapper > *{
   padding: 1em;
 }
-
+.contact form label{
+  display:block;
+}
+.contact form p{
+  margin:0;
+}
+.contact form button{
+  background:#c9e6ff;
+  border:0;
+  text-transform: uppercase;
+}
+.contact form button, .contact form input, .contact form textarea{
+  width:100%;
+  padding:1em;
+  border:1px solid #c9e6ff;
+}
 
