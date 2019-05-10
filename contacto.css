@@ -1,4 +1,8 @@
 
+body{
+  font-family: Arimo;
+}
+
 /*navbar*/
 .header1 {
   width: 100%;
@@ -135,3 +139,38 @@ width: 20%;
 .contenedor2 img.top2:hover {
   opacity: 0;
 }
+/*mensaje alerta*/
+.alert{
+  text-align: center;
+  padding:10px;
+  background:#E7D60A;
+  color:black;
+  margin-bottom:10px;
+  display:none;
+}
+
+/*titulo*/
+
+.titulocontacto{
+text-align: center;
+font-family: Arimo;
+font-size: 40px;
+
+}
+/*formulario*/
+.container{
+  max-width:400px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em;
+}
+
+.wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+

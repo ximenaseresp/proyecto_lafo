@@ -10,7 +10,10 @@
   <link rel="stylesheet" type="text/css" href="contacto.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  
 </head>
 <body>
 
@@ -45,21 +48,47 @@ $(".btn").on("click", function() {
   </section>
   
 </div>
-
-
+<div class="row">
+   <section class="col-md-4">
+  
+    
+  </section>
+  <section class="col-md-4">
+   <p class="titulocontacto">CONTACTO</p>
+    
+  </section>
+   <section class="col-md-4">
+   
+    
+  </section>
+</div>
+<div class="row">
+  <section class="col-xl-12">
+    <br><br><br>
+    
+  </section>
+  
+</div>
   <div class="row">
     <section class="col-md-4">
        
     </section>
     <section class="col-md-4">
+      <div class="container">
+         <div class="wrapper">
+          <div class="contact">
+            <LABEL class="alert">
+        mensaje enviado
+      </LABEL> 
     <form id="contactForm">
-      <LABEL class="alert">
-        tu registro ha sido enviado, gracias
-      </LABEL>
+      
           <p>
-            <label>Nombre</label>
+            
+            <label >Nombre</label>
             <input type="text" name="name" id="name" required>
+         
           </p>
+
           <p>
             <label>Apellido</label>
             <input type="text" name="company" id="company">
@@ -74,18 +103,22 @@ $(".btn").on("click", function() {
           </p>
           <p class="full">
             <label>Dejanos tu opinión</label>
-            <textarea name="message" rows="5" id="message"></textarea>
+            <textarea name="message" rows="5"  id="message"></textarea>
           </p>
           <p class="full">
             <button type="submit">Submit</button>
           </p>
         </form>
+      </div>
+      </div>
+        </div>
          
         </section>
            <section class="col-md-4">
      
     </section>
   </div>
+
 
 <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
 <script src="indexjs.js"></script>
@@ -96,6 +129,7 @@ $(".btn").on("click", function() {
   </section>
   
 </div>
+
 <div class="row">
   <section class="col-md-12">
 <footer>
