@@ -1,0 +1,137 @@
+
+/*navbar*/
+.header1 {
+  width: 100%;
+  height: 600px;
+  background: url(postal_lafo1.png) no-repeat 50% 50%;
+  background-size: cover;
+
+}
+.navbar {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  align-items: center;
+  background: #f1f1f1;
+  z-index: 1;
+}
+
+.menu {
+  position: absolute;
+  right: 25%;
+  top: 35%;
+}
+
+.menu a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 20px;
+  transition: color 0.3s;
+  text-transform: uppercase;
+}
+
+.menu a:hover {
+  color: #E7D60A;
+}
+
+
+
+.btn {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 25%;
+}
+
+.btn:hover > span {
+  background-color: #E7D60A;
+}
+
+.btn span {
+  display: block;
+  margin: 6px;
+  width: 40px;
+  height: 3px;
+  background: #333;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    overflow: visible;
+  }
+  .menu {
+    width: 100%;
+    right: 0;
+    top: 60px;
+    background: #f1f1f1;
+    overflow: hidden;
+    max-height: 0;
+  }
+  .menu a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+  .btn {
+    display: block;
+    cursor: pointer;
+  }
+  .show {
+    max-height: 500px;
+  }
+}
+/* navbar*/
+
+
+
+/*footer*/
+footer {
+ 
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+#linea2{
+
+  vertical-align: center;
+
+height: 8px;
+background-color: black;
+border-radius: 10px;
+border-color: black;
+width: 20%;
+}
+/*footer*/
+
+
+/*animacion*/
+/*.contenedor {
+  position: relative;
+  height: 290px;
+  width: 290px;
+  margin: 50px 20px;
+  float: left;
+}*/
+
+.contenedor img {
+  position: absolute;
+  left: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.contenedor img.top:hover {
+  opacity: 0;
+}
+.contenedor2 img {
+  position: absolute;
+  left: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.contenedor2 img.top2:hover {
+  opacity: 0;
+}
