@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>about</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  
+</head>
+<body>
+
+  <div class="navbar">
+
+  
+  <a class="btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+  <div class="menu"> 
+    <a href="indexlafo.html"><i class="fa fa-home" style="font-size: 24px"></i></a>
+    <a href="about.html">about</a>
+    <a href="#">pese a todo</a>
+    <a href="#">fotografia para conversar</a>
+    <a href="#">residencias</a>
+    <a href="#">archivo</a>
+<a href="contacto.html">contacto</a>
+    <a href="#">news</a>
+  </div>
+</div>
+<script type="text/javascript">
+$(".btn").on("click", function() {
+  $(".menu").toggleClass("show");
+});
+</script>
+<div class="row">
+  <section class="col-xl-12">
+    <br><br><br><br><br>
+    
+  </section>
+  
+</div>
+<div class="row">
+   <section class="col-md-4">
+  
+    
+  </section>
+  <section class="col-md-4">
+   <p class="titulocontacto">ABOUT</p>
+    
+  </section>
+   <section class="col-md-4">
+   
+    
+  </section>
+</div>
+
+
+<div class="row">
+   <section class="col-md-6">
+  <div class="card">
+  <div class="pull-right">
+    <button onclick="changeBg()"> Change Color &#8635
+    </button>
+  </div>
+  <img  class="pic">
+    
+  </img>
+
+  <h1>Hao Zhang</h1>
+  <h4>haoz2@illinois.edu</h4>
+  <div>
+    
+    <a href="https://codepen.io/lucian33" class="link">
+      <img src="https://blog.codepen.io/wp-content/uploads/2012/06/codepen-wordmark-display-inside-black@10x.png"/>
+    </a>   
+  </div>
+
+  <div onclick="expand()" class="expand">...</div>
+  
+  <div id="hidedInfo">
+    <p>
+      Self-Motivated. Detail-Driven. Collaborative. I am currently a graduate student in UIUC majored in GIS. Believing in that geography can make the world a better place and programming is the closest thing we have to magic, I am well educated as a geographer and programmer.
+    </p>
+    <p>
+      Intrigued by the web development and webGIS technology, I have already started to learn tools such as JavaScript, jQuery, and WebGL. Driven by my passion for technology, my next step is to pursue the state-of-art knowledge in these areas.
+    </p>
+  </div>
+
+</div>
+
+  
+    
+  </section>
+  <!--<section class="col-md-2">
+ 
+    
+  </section>-->
+   <section class="col-md-6">
+   
+    <div class="card">
+  <div class="pull-right">
+    <button onclick="changeBg()"> Change Color &#8635
+    </button>
+  </div>
+  <img  class="pic">
+    
+  </img>
+
+  <h1>Hao Zhang</h1>
+  <h4>haoz2@illinois.edu</h4>
+  <div>
+    
+    <a href="https://codepen.io/lucian33" class="link">
+      <img src="https://blog.codepen.io/wp-content/uploads/2012/06/codepen-wordmark-display-inside-black@10x.png"/>
+    </a>   
+  </div>
+
+  <div onclick="expand2()" class="expand">...</div>
+  
+  <div id="hidedInfo2">
+    <p>
+      Self-Motivated. Detail-Driven. Collaborative. I am currently a graduate student in UIUC majored in GIS. Believing in that geography can make the world a better place and programming is the closest thing we have to magic, I am well educated as a geographer and programmer.
+    </p>
+    <p>
+      Intrigued by the web development and webGIS technology, I have already started to learn tools such as JavaScript, jQuery, and WebGL. Driven by my passion for technology, my next step is to pursue the state-of-art knowledge in these areas.
+    </p>
+  </div>
+
+</div>
+
+  
+  </section>
+  <script type="text/javascript">
+    var bool = true; // used to toggle background color
+var hide = true;
+
+// toggle background color
+function changeBg(){
+  var card = document.getElementsByClassName('card');
+  
+  if(bool){
+    card[0].style.backgroundColor = '#b3ecff';
+    bool = !bool;
+  }
+  else {
+    card[0].style.backgroundColor = 'ghostWhite';
+    bool = !bool;
+  }
+}
+var info = document.getElementById('hidedInfo');
+// toggle hide information
+function expand(){
+  
+  if(hide){
+    info.style.display = "block"; 
+    hide = !hide;
+  }
+  else{
+    info.style.display = "none";
+    hide = !hide;
+  }
+  
+}
+var info2 = document.getElementById('hidedInfo2');
+// toggle hide information
+function expand2(){
+  
+  if(hide){
+    info2.style.display = "block"; 
+    hide = !hide;
+  }
+  else{
+    info2.style.display = "none";
+    hide = !hide;
+  }
+  
+}
+
+// collapse card if reaches min height
+window.addEventListener('resize', function(){
+  var card = document.getElementsByClassName("card"); 
+  var height = window.innerHeight * 0.8;// card has 80% height of body
+  if(height < 600){
+     //alert();
+    info.style.display = "none";
+    hide = !hide;
+  }
+});
+  </script>
+</div>
+
+
+<div class="row">
+  <section class="col-md-12">
+<footer>
+<h5>@lafomx</h5>
+
+<h5>laboratoriodearteyfotografia.tumblr.com</h5>
+
+<h4>laboratoriodearteyfotografia@gmail.com</h4>
+<hr id="linea2">
+<a href="https://laboratoriodearteyfotografia.tumblr.com/"><i class="fa fa-tumblr" style="font-size:24px; text-decoration-color: none;" ></i> </a>  <a href="twitter.com">    <i class="fa fa-twitter" style="font-size:24px"></i> </a> <a href="facebook.com"><i class="fa fa-facebook" style="font-size:24px"></i></a>
+</section>
+</div>
+</body>
+</html>
