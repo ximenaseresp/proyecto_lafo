@@ -1,7 +1,6 @@
 body{
-  font-family: Arimo;
+  font-family: Comfortaa
 }
-
 /*navbar*/
 .header1 {
   width: 100%;
@@ -78,6 +77,7 @@ body{
     text-align: center;
     padding: 10px;
     margin: 0;
+    
   }
   .btn {
     display: block;
@@ -97,6 +97,7 @@ footer {
   text-align: center;
   padding: 10px;
   width: 100%;
+  
 }
 #linea2{
 
@@ -114,7 +115,7 @@ width: 20%;
 
 .titulocontacto{
 text-align: center;
-font-family: Arimo;
+
 font-size: 40px;
 
 }
@@ -148,6 +149,7 @@ button{
   background-color: black;
   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
   color: white;
+  font-family: Comfortaa;
 }
 .card2{
   max-width:600px;
@@ -160,27 +162,34 @@ button{
   background-color: black;
   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
   color: white;
+  font-family: Comfortaa;
+
 }
 
 .expand{
   font-size: 30px;
   cursor: pointer;
   margin-bottom: 20px;
+
 }
 
 #hidedInfo{
   display: none;
-  font-size: 18px;
+  font-size: 14px;
   text-align: left;
   margin: 20px;
   color: white;
+  font-family: Comfortaa;
+
 }
 #hidedInfo2{
   display: none;
-  font-size: 18px;
+  font-size: 14px;
   text-align: left;
   margin: 20px;
   color: white;
+  font-family: 'Comfortaa';
+
 }
 
 
