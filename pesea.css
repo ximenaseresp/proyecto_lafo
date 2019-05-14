@@ -166,4 +166,23 @@ width: 80%;
 }
 /*lineas*/
 
+/*ensayo1*/
+.titulo{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.autores{
+  text-align: center;
+  font-size: 16px;
+}
+.cita{
+  text-align: right;
+  font-weight: 900;
+}
+.marcados{
+  text-align: left;
+  font-weight: bold;
+}
+/*ensayo1*/
 
