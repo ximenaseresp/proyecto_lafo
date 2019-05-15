@@ -146,10 +146,11 @@ button{
   top: 10%;
 
   text-align: center; /*center text*/
-  background-color: black;
-  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
-  color: white;
+  background-color: white;
+  
+  color: grey;
   font-family: Comfortaa;
+  border-color: black;
 }
 
 
@@ -170,7 +171,7 @@ button{
   font-size: 14px;
   text-align: left;
   margin: 20px;
-  color: white;
+  color: black;
   font-family: Comfortaa;
 
 }
@@ -179,7 +180,7 @@ button{
   font-size: 14px;
   text-align: left;
   margin: 20px;
-  color: white;
+  color: black;
   font-family: 'Comfortaa';
 
 }
@@ -192,6 +193,7 @@ button{
   font-family: 'Comfortaa';
   background-color:  white;
   padding: 20px 20px 20px 20px;
+
 
 
 }
@@ -231,5 +233,45 @@ button{
  }
  .quees{
 
-  text-align: right;
+  text-align: left;
  }
+
+
+/* slider automatico*/
+.slider {
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul {
+  padding: 0;
+  display: flex;
+  width: 400%;
+  animation: slid 20s infinite reverse;
+  animation-timing-function: ease-in;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+}
+
+@keyframes slid {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+  
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+  
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+  
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+/* slider automatico*/
