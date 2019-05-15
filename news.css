@@ -1,8 +1,6 @@
-
 body{
-  font-family: Comfortaa;
+  font-family: Comfortaa
 }
-
 /*navbar*/
 .header1 {
   width: 100%;
@@ -25,7 +23,6 @@ body{
 .menu {
   position: absolute;
   right: 25%;
-
   top: 35%;
 }
 
@@ -80,6 +77,7 @@ body{
     text-align: center;
     padding: 10px;
     margin: 0;
+    
   }
   .btn {
     display: block;
@@ -91,11 +89,7 @@ body{
 }
 /* navbar*/
 
-.titulocontacto{
-text-align: center;
-font-size: 40px;
 
-}
 
 /*footer*/
 footer {
@@ -103,6 +97,7 @@ footer {
   text-align: center;
   padding: 10px;
   width: 100%;
+  
 }
 #linea2{
 
@@ -114,84 +109,13 @@ border-radius: 10px;
 border-color: black;
 width: 20%;
 }
-/*footer*/
 
-/* slider automatico*/
-.slider {
-  width: 95%;
-  margin: auto;
-  overflow: hidden;
-}
 
-.slider ul {
-  padding: 0;
-  display: flex;
-  width: 400%;
-  animation: slid 20s infinite reverse;
-  animation-timing-function: ease-in;
-}
+/*TITULO*/
 
-.slider li {
-  width: 100%;
-  list-style: none;
-}
+.titulocontacto{
+text-align: center;
 
-.slider img {
-  width: 100%;
-}
-
-@keyframes slid {
-  0% {margin-left: 0;}
-  20% {margin-left: 0;}
-  
-  25% {margin-left: -100%;}
-  45% {margin-left: -100%;}
-  
-  50% {margin-left: -200%;}
-  70% {margin-left: -200%;}
-  
-  75% {margin-left: -300%;}
-  100% {margin-left: -300%;}
-}
-/* slider automatico*/
-
-/*lineas*/
-#uno{
-
-vertical-align: center;
-height: 1px;
-background-color: black;
-border-style: none;
-width: 80%;
-}
-/*lineas*/
-
-/*ensayo1*/
-.titulo{
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
- 
-}
-.autores{
-  text-align: center;
-  font-size: 16px;
+font-size: 40px;
 
 }
-.cita{
-  text-align: right;
-  font-weight: 900;
-  
-}
-.marcados{
-  text-align: left;
-  font-weight: bold;
-  
-}
-.espacio{
-   margin-right: 20px;
-   margin-left: 20px;
- }
-/*ensayo1*/
-
-/*paginacion*/
