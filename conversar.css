@@ -153,8 +153,8 @@ button{
 }
 .card2{
   max-width:600px;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left:10%;
+  margin-right:20%;
   padding:1em;
   top: 10%;
 
@@ -206,3 +206,15 @@ button{
   width: 120px;
   height: auto;
 }
+
+/* des*/
+
+
+/*que es*/
+.espacio{
+   margin-right: 60px;
+   margin-left: 60px;
+ }
+ .quees{
+  text-align: right;
+ }
