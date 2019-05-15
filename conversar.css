@@ -139,7 +139,7 @@ button{
 }
 
 .card{
-  max-width:600px;
+  max-width:1200px;
   margin-left:auto;
   margin-right:auto;
   padding:1em;
@@ -151,26 +151,18 @@ button{
   color: white;
   font-family: Comfortaa;
 }
-.card2{
-  max-width:600px;
-  margin-left:10%;
-  margin-right:20%;
-  padding:1em;
-  top: 10%;
 
-  text-align: center; /*center text*/
-  background-color: black;
-  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
-  color: white;
-  font-family: Comfortaa;
 
-}
 
 .expand{
   font-size: 30px;
   cursor: pointer;
   margin-bottom: 20px;
 
+
+}
+.expand i:hover {
+  color: #E7D60A;
 }
 
 #hidedInfo{
@@ -191,7 +183,29 @@ button{
   font-family: 'Comfortaa';
 
 }
+#hidedInfo3{
+  display: none;
+  font-size: 14px;
+  text-align: left;
+  margin: 20px;
+  color: black;
+  font-family: 'Comfortaa';
+  background-color:  white;
+  padding: 20px 20px 20px 20px;
 
+
+}
+#hidedInfo4{
+  display: none;
+  font-size: 14px;
+  text-align: left;
+  margin: 20px;
+  color: black;
+  font-family: 'Comfortaa';
+  background-color:  white;
+  padding: 20px 20px 20px 20px;
+
+}
 
 .pic{
   /*  creates circle for img  */
@@ -212,9 +226,10 @@ button{
 
 /*que es*/
 .espacio{
-   margin-right: 60px;
-   margin-left: 60px;
+   margin-right: 10px;
+   margin-left: 10px;
  }
  .quees{
+
   text-align: right;
  }
