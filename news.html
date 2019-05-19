@@ -17,6 +17,8 @@
   -
 </head>
 <body>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.3"></script>
 
   <div class="navbar">
 
@@ -210,8 +212,28 @@ function showSlide(isPrev) {
 <h4>laboratoriodearteyfotografia@gmail.com</h4>
 <hr id="linea2">
 <a href="https://laboratoriodearteyfotografia.tumblr.com/"><i class="fa fa-tumblr" style="font-size:24px;text-decoration-color: none; color: black;" ></i> </a>  <a href="twitter.com">    <i class="fa fa-twitter" style="font-size:24px;text-decoration-color: none; color: black;"></i> </a> <a href="facebook.com"><i class="fa fa-facebook" style="font-size:24px;text-decoration-color: none; color: black;"></i></a>
+</footer>
+</section>
+
+</div>
+
+<div class="row">
+<section class="col-md-12">
+<section class="chat-container">
+  <div class="chat-button">Chat de facebook</div>
+  <div class="chat-content">
+    <div class="fb-page" data-href="https://www.facebook.com/LaFO-Laboratorio-de-Arte-y-Fotograf%C3%ADa-258472767557184/" data-tabs="messages" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/LaFO-Laboratorio-de-Arte-y-Fotograf%C3%ADa-258472767557184/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LaFO-Laboratorio-de-Arte-y-Fotograf%C3%ADa-258472767557184/">LaFO Laboratorio de Arte y Fotografía</a></blockquote></div>
+  </div>
+  
+</section>
 </section>
 </div>
-<script async type="text/javascript" src="//userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/17018a78bcf4afdb1b4a3ffa0dc69fd35c5a8e321c7a934a1ab8f0e6e8173965.js"></script>
+<script>
+  $(".chat-button").on('click', function(e){
+        e.preventDefault();
+        $(".chat-content").slideToggle('fast');
+  });
+
+</script>
 </body>
 </html>
