@@ -127,7 +127,7 @@ width: 20%;
   padding: 0;
   display: flex;
   width: 400%;
-  animation: slid 20s infinite reverse;
+  animation: slid 10s infinite reverse;
   animation-timing-function: ease-in;
 }
 
