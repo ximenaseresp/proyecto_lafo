@@ -180,7 +180,6 @@ li {
 }
 .decoracion:hover{
   text-decoration: none;
-<<<<<<< HEAD
 }
 
 /*fondos*/
@@ -563,6 +562,3 @@ button:focus ~ figcaption h4:after {
   transition:all .15s .5s;
 }
 
-=======
-}
->>>>>>> parent of cf803c0... archivo
