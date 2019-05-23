@@ -438,7 +438,7 @@ img {
   font-size:2rem;
   line-height:3rem;
   font-weight:300;
-  color:#333;
+  color:black;
   text-transform:uppercase;
   letter-spacing:3px;
 }
@@ -462,9 +462,10 @@ button {
   position:absolute;
   bottom:-75px;
   width:75px;
-  height:75px;
+  height:55px;
   border:0;
-  background:#333;
+  background-color:white;
+  color: black;
   cursor:pointer;
   font-family: 'Source Sans Pro', sans-serif;
   font-size:2rem;
@@ -476,15 +477,16 @@ button {
   -o-transition:all .15s;
   transition:all .15s;
 }
-.one button {left:0;}
-.two button {left:75px;}
-.three button {left:150px;}
-.four button {left:225px;}
+.one button {left:0; color:black;}
+.two button {left:75px; color:black;}
+.three button {left:150px;color:black;}
+.four button {left:225px;color:black;}
 .one figcaption,
 .two figcaption,
 .three figcaption,
 .four figcaption {
   position:absolute;
+  color: black;
   width:100%;
   display:block;
   top:0;
@@ -543,10 +545,11 @@ h4:after {
 }
 button:focus {
   outline:none;
-  color:rgba(255,255,255,1);
+  color:black;
 }
 button::-moz-focus-inner {
   border: 0;
+
 }
 button:focus ~ img {
   -webkit-transform:translateY(0px);
