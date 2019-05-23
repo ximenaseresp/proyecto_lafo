@@ -181,3 +181,15 @@ li {
 .decoracion:hover{
   text-decoration: none;
 }
+
+/*fondos*/
+
+.decoracionfon{
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.decoracionfon1:hover{
+  text-decoration: none;
+}
