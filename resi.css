@@ -1,0 +1,330 @@
+body{
+  font-family: Comfortaa
+}
+/*navbar*/
+.header1 {
+  width: 100%;
+  height: 600px;
+  background: url(postal_lafo1.png) no-repeat 50% 50%;
+  background-size: cover;
+
+}
+.navbar {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  align-items: center;
+  background: #f1f1f1;
+  z-index: 999;
+}
+
+.menu {
+  position: absolute;
+  right: 25%;
+  top: 35%;
+}
+
+.menu a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 20px;
+  transition: color 0.3s;
+  text-transform: uppercase;
+}
+
+.menu a:hover {
+  color: #E7D60A;
+}
+
+
+
+.btn {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 25%;
+}
+
+.btn:hover > span {
+  background-color: #E7D60A;
+}
+
+.btn span {
+  display: block;
+  margin: 6px;
+  width: 40px;
+  height: 3px;
+  background: #333;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    overflow: visible;
+  }
+  .menu {
+    width: 100%;
+    right: 0;
+    top: 60px;
+    background: #f1f1f1;
+    overflow: hidden;
+    max-height: 0;
+  }
+  .menu a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    
+  }
+  .btn {
+    display: block;
+    cursor: pointer;
+  }
+  .show {
+    max-height: 500px;
+  }
+}
+/* navbar*/
+
+
+
+/*footer*/
+footer {
+ 
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  
+}
+#linea2{
+
+  vertical-align: center;
+
+height: 8px;
+background-color: black;
+border-radius: 10px;
+border-color: black;
+width: 20%;
+}
+
+
+/*TITULO*/
+
+.titulocontacto{
+text-align: center;
+
+font-size: 40px;
+
+}
+
+
+/*chat */
+.chat-container{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 340px;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 999;
+}
+
+
+.chat-button{
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+  padding: 4px 0;
+  background-color: black;
+  text-align: center;
+  color: #fff;
+}
+
+.chat-content{
+  margin: 0;
+  padding: 0;
+  display: none;
+  background-color: #fff;
+}
+
+
+/*gallery*/
+.container{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.container h1{
+  font-size: 35px;
+  color:  #E7D60A;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.wrapper{
+    border: 1px solid #e0e0e0;
+  display: flex;
+  margin-bottom: 5%;
+}
+.wrapper div.item{
+  flex: 1;
+  height: 50vh;
+  transition: .3s;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.wrapper div.item:hover{
+  flex: 3;
+}
+.wrapper div:nth-child(1){
+  background-image: url(_DSC0012.jpg);
+}
+.wrapper div:nth-child(2){
+  background-image: url('_DSC0004.jpg');
+}
+.wrapper div:nth-child(3){
+  background-image: url('_DSC0918.jpg');
+}
+.wrapper div:nth-child(4){
+  background-image: url('_DSC0071.JPG');
+}
+.wrapper div:nth-child(5){
+  background-image: url('_DSC0146.jpg');
+}
+
+
+.container2{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.container2 h1{
+  font-size: 35px;
+  color:  #E7D60A;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.wrapper2{
+    border: 1px solid #e0e0e0;
+  display: flex;
+  margin-bottom: 5%;
+}
+.wrapper2 div.item2{
+  flex: 1;
+  height: 50vh;
+  transition: .3s;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.wrapper2 div.item2:hover{
+  flex: 3;
+}
+.wrapper2 div:nth-child(1){
+  background-image: url(_PostalResidencia.jpg);
+}
+.wrapper2 div:nth-child(2){
+  background-image: url('_DSC0293.jpg');
+}
+.wrapper2 div:nth-child(3){
+  background-image: url('_DSC0030.jpg');
+}
+.wrapper2 div:nth-child(4){
+  background-image: url('_DSC0262.jpg');
+}
+.wrapper2 div:nth-child(5){
+  background-image: url('_DSC0187.jpg');
+}
+
+.container3{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.container3 h1{
+  font-size: 35px;
+  color:  #E7D60A;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.wrapper3{
+    border: 1px solid #e0e0e0;
+  display: flex;
+  margin-bottom: 5%;
+}
+.wrapper3 div.item3{
+  flex: 1;
+  height: 50vh;
+  transition: .3s;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.wrapper3 div.item3:hover{
+  flex: 3;
+}
+.wrapper3 div:nth-child(1){
+  background-image: url('_1520608.jpg');
+}
+.wrapper3 div:nth-child(2){
+  background-image: url('EXPOSICIÓN_Intermontañas.jpg');
+}
+.wrapper3 div:nth-child(3){
+  background-image: url('IMG_20181118_173353.jpg');
+}
+.wrapper3 div:nth-child(4){
+  background-image: url('P1520591.JPG');
+}
+.wrapper3 div:nth-child(5){
+  background-image: url(_DSC0774.jpg);
+}
+
+
+.container4{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.container4 h1{
+  font-size: 35px;
+  color:  #E7D60A;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.wrapper4{
+    border: 1px solid #e0e0e0;
+  display: flex;
+  margin-bottom: 5%;
+}
+.wrapper4 div.item4{
+  flex: 1;
+  height: 50vh;
+  transition: .3s;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.wrapper4 div.item4:hover{
+  flex: 3;
+}
+.wrapper4 div:nth-child(1){
+  background-image: url(COMING.png);
+}
