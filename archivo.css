@@ -329,22 +329,7 @@ div#quad figure figcaption {
 div#quad figure.expanded figcaption { opacity: 1; }
 div.full figure:not(.expanded) { pointer-events: none; }*/
 
-.ul {
-    list-style: none outside none;
-    padding-left: 0;
-    margin-bottom:0;
-}
-li {
-    display: block;
-    float: left;
-    margin-right: 6px;
-    cursor:pointer;
-}
-img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-}
+
 #gallery2 {
   position:relative;
   width:300px;
@@ -576,3 +561,4 @@ button:focus ~ figcaption h4:after {
   -o-transition:all .15s .5s;
   transition:all .15s .5s;
 }
+
