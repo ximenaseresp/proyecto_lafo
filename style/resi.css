@@ -186,19 +186,19 @@ font-size: 40px;
   flex: 3;
 }
 .wrapper div:nth-child(1){
-  background-image: url("proyecto_lafo/images/_DSC0012.jpg");
+  background-image: url("_DSC0012.jpg");
 }
 .wrapper div:nth-child(2){
-  background-image: url(images/_DSC0004.jpg);
+  background-image: url(_DSC0004.jpg);
 }
 .wrapper div:nth-child(3){
-  background-image: url(images/_DSC0918.jpg);
+  background-image: url(_DSC0918.jpg);
 }
 .wrapper div:nth-child(4){
-  background-image: url(images/_DSC0071.JPG);
+  background-image: url(_DSC0071.JPG);
 }
 .wrapper div:nth-child(5){
-  background-image: url(images/_DSC0146.jpg);
+  background-image: url(_DSC0146.jpg);
 }
 
 
@@ -326,5 +326,5 @@ font-size: 40px;
   flex: 3;
 }
 .wrapper4 div:nth-child(1){
-  background-image: url(images\COMING.png);
+  background-image: url(COMING.png);
 }
