@@ -39,7 +39,7 @@ body{
 }
 
 .menu a:hover {
-  color: #E7D60A;
+  color: #F5A11F;
 }
 
 
@@ -52,7 +52,7 @@ body{
 }
 
 .btn:hover > span {
-  background-color: #E7D60A;
+  background-color: #F5A11F;
 }
 
 .btn span {
